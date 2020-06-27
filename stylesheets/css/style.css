@@ -152,4 +152,42 @@ body {
   padding-bottom: 3vh;
 }
 
+/*-------------------------------*/
+/*Projects SECTION*/
+/*-------------------------------*/
+.projects .projects-container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: #A192F;
+}
+.projects .projects-container > .projects-content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3vh;
+  height: 70vh;
+  width: 70vw;
+}
+.projects .projects-container > .projects-content > .project-card {
+  font-size: 0.6rem;
+  background: #172A45;
+  border-radius: 3px;
+  padding: 5vh 5vw;
+}
+.projects .projects-container > .projects-content > .project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 3vh;
+}
+.projects .projects-container > .projects-content > .project-card p {
+  font-size: 0.7rem;
+  margin-bottom: 3vh;
+}
+.projects .projects-container > .projects-content > .project-card ul > li {
+  display: inline-block;
+  font-size: 0.4rem;
+  margin-right: 2vw;
+}
+
 /*# sourceMappingURL=style.css.map */
