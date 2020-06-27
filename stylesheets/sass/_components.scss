@@ -10,7 +10,7 @@
   }
 }
 #fp-nav.fp-right {
-  right: 1vw;
+  right: 0.5vw;
 }
 
 /*-------------------------------*/
@@ -34,7 +34,7 @@
       align-self: center;
       display: inline-block;
       text-transform: uppercase;
-      font-size: 0.6rem;
+      font-size: 0.8rem;
       transition: 0.4s ease;
     }
     & a:hover {
@@ -63,7 +63,7 @@
   align-content: center;
   text-align: center;
   & .title-container > h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   & .title-container > p {
     font-size: 1rem;
@@ -73,9 +73,62 @@
 /*ABOUT SECTION*/
 /*-------------------------------*/
 .about {
+  text-align: center;
+  & .about-container > div {
+    & > h2 {
+      font-size: 1.5rem;
+      color: orange;
+    }
+    & > h3 {
+      font-size: 1rem;
+      color: rgb(177, 241, 231);
+    }
+    & > p.where {
+      font-size: 0.6rem;
+      color: #b39b9b;
+    }
+    & > p.period {
+      font-size: 0.6rem;
+      color: #b39b9b;
+    }
+    & > p.description {
+      font-size: 0.6rem;
+      color: #b39b9b;
+    }
+  }
+
   & .about-container {
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+}
+
+/*-------------------------------*/
+/*Contact SECTION*/
+/*-------------------------------*/
+.contact {
+  display: flex;
+  justify-content: center;
+  & .contact-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    & .contact-content {
+      text-align: center;
+      justify-self: center;
+      align-self: center;
+      width: 65%;
+      height: 40%;
+      & h2{
+        font-size: 1rem;
+        padding-bottom: 3vh;;
+      }
+      & p{
+        font-size: 0.6rem;
+        padding-bottom: 3vh;;
+      }
+    }
   }
 }

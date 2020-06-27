@@ -19,5 +19,5 @@ var seccionesPagina = new fullpage("#fullpage", {
   anchors: ["home", "projects", "about", "contact"], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
   navigationTooltips: ["Home", "Projects", "About", "Contact"], // Tooltips que mostrara por cada boton.
   showActiveTooltip: false, // Mostrar tooltip activa.
-  sectionsColor : ['#000', '#c2c2c2', '#000', '#c2c2c2']
+  sectionsColor : ['#011627', '#011627', '#011627', '#011627']
 });

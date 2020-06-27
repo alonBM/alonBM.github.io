@@ -33,7 +33,7 @@ body {
 }
 
 #fp-nav.fp-right {
-  right: 1vw;
+  right: 0.5vw;
 }
 
 /*-------------------------------*/
@@ -57,7 +57,7 @@ body {
   align-self: center;
   display: inline-block;
   text-transform: uppercase;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   transition: 0.4s ease;
 }
 .navbar ul a:hover {
@@ -85,7 +85,7 @@ body {
   text-align: center;
 }
 .home .title-container > h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .home .title-container > p {
   font-size: 1rem;
@@ -94,10 +94,62 @@ body {
 /*-------------------------------*/
 /*ABOUT SECTION*/
 /*-------------------------------*/
+.about {
+  text-align: center;
+}
+.about .about-container > div > h2 {
+  font-size: 1.5rem;
+  color: orange;
+}
+.about .about-container > div > h3 {
+  font-size: 1rem;
+  color: #b1f1e7;
+}
+.about .about-container > div > p.where {
+  font-size: 0.6rem;
+  color: #b39b9b;
+}
+.about .about-container > div > p.period {
+  font-size: 0.6rem;
+  color: #b39b9b;
+}
+.about .about-container > div > p.description {
+  font-size: 0.6rem;
+  color: #b39b9b;
+}
 .about .about-container {
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+/*-------------------------------*/
+/*Contact SECTION*/
+/*-------------------------------*/
+.contact {
+  display: flex;
+  justify-content: center;
+}
+.contact .contact-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+.contact .contact-container .contact-content {
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  width: 65%;
+  height: 40%;
+}
+.contact .contact-container .contact-content h2 {
+  font-size: 1rem;
+  padding-bottom: 3vh;
+}
+.contact .contact-container .contact-content p {
+  font-size: 0.6rem;
+  padding-bottom: 3vh;
 }
 
 /*# sourceMappingURL=style.css.map */
