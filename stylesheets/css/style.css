@@ -22,70 +22,62 @@ body {
   color: #D4D6D6;
 }
 
-.container {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "home" "about" "projects" "contact" "footer";
+/*-------------------------------*/
+/*FULLPAGE LATERAL SCROLL BAR*/
+/*-------------------------------*/
+#fp-nav ul li a span {
+  background: orange;
+}
+#fp-nav ul li .fp-tooltip {
+  color: orange;
 }
 
+#fp-nav.fp-right {
+  right: 1vw;
+}
+
+/*-------------------------------*/
+/*NAVBAR*/
+/*-------------------------------*/
 .navbar {
   position: fixed;
-  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 2vh;
+  z-index: 10;
+}
+.navbar ul {
+  align-self: center;
+  padding-right: 2vw;
+}
+.navbar ul li, .navbar ul a {
+  align-self: center;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  transition: 0.4s ease;
+}
+.navbar ul li {
+  margin-right: 2vw;
+}
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+.navbar ul li.active {
+  border-bottom: 3px solid orange;
+}
+.navbar ul li.active a {
+  color: orange;
+}
+.navbar .logo {
+  padding-left: 2vw;
 }
 
-.home {
-  grid-area: home;
-  height: 100vh;
-}
-
-.about {
-  grid-area: about;
-  height: 100vh;
-  background: #43685e;
-}
-
-.projects {
-  grid-area: projects;
-  height: 100vh;
-  background: #09294e;
-}
-
-.contact {
-  grid-area: contact;
-  height: 100vh;
-  background: #4a7196;
-}
-
-.footer {
-  grid-area: footer;
-  height: 5vh;
-  background: #964a4a;
-}
-
-.navbar {
-  position: fixed;
-  width: 100vw;
-}
-.navbar > div {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "logo links ";
-  background-color: transparent;
-  padding: 2vh 5vh;
-}
-.navbar > div > .logo {
-  grid-area: logo;
-}
-.navbar > div > .links {
-  grid-area: links;
-  display: grid;
-  grid-template-columns: 6fr 1fr 1fr 1fr 1fr;
-  text-align: center;
-}
-
+/*-------------------------------*/
+/*HOME SECTION*/
+/*-------------------------------*/
 .home {
   background: url(../../images/header.jpg);
   background-size: cover;
@@ -93,39 +85,21 @@ body {
   justify-content: center;
   align-content: center;
   text-align: center;
-  text-transform: uppercase;
 }
-.home > div > h1 {
-  font-size: 4rem;
-}
-.home > div > p {
+.home .title-container > h1 {
   font-size: 2rem;
 }
-
-body {
-  overflow: overlay;
+.home .title-container > p {
+  font-size: 1rem;
 }
 
-body::-webkit-scrollbar {
-  width: 1vh;
-  background: rgba(206, 156, 156, 0.767);
-}
-
-/* Track */
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgba(66, 81, 218, 0);
-  border-radius: 10px;
-}
-
-/* Handle */
-body::-webkit-scrollbar-thumb {
-  background: #1776cf;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-body::-webkit-scrollbar-thumb:hover {
-  background: #23338d;
+/*-------------------------------*/
+/*ABOUT SECTION*/
+/*-------------------------------*/
+.about .about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=style.css.map */
