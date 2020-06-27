@@ -24,10 +24,11 @@
   width: 100%;
   padding-top: 2vh;
   z-index: 10;
-  
+
   & ul {
-    align-self: center;
-    padding-right: 2vw;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
     & li,
     & a {
       align-self: center;
@@ -36,11 +37,8 @@
       font-size: 0.6rem;
       transition: 0.4s ease;
     }
-    & li {
-      margin-right: 2vw;
-    }
-    & li:last-child {
-      margin-right: 0;
+    & a:hover {
+      color: orange;
     }
     & li.active {
       border-bottom: 3px solid orange;
@@ -50,7 +48,7 @@
     }
   }
   & .logo {
-    padding-left: 2vw;
+    display: none;
   }
 }
 

@@ -49,8 +49,9 @@ body {
   z-index: 10;
 }
 .navbar ul {
-  align-self: center;
-  padding-right: 2vw;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 .navbar ul li, .navbar ul a {
   align-self: center;
@@ -59,11 +60,8 @@ body {
   font-size: 0.6rem;
   transition: 0.4s ease;
 }
-.navbar ul li {
-  margin-right: 2vw;
-}
-.navbar ul li:last-child {
-  margin-right: 0;
+.navbar ul a:hover {
+  color: orange;
 }
 .navbar ul li.active {
   border-bottom: 3px solid orange;
@@ -72,7 +70,7 @@ body {
   color: orange;
 }
 .navbar .logo {
-  padding-left: 2vw;
+  display: none;
 }
 
 /*-------------------------------*/
