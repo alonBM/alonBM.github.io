@@ -1,0 +1,26 @@
+
+$font-color: #b39b9b;
+
+html, body, div, form,
+h1, h2, h3, h4, h5, h6,
+p, a , ul, li{
+  font-size: 100%;
+  font-weight: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  list-style: none;
+  
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+
+body{
+  font-family: "Montserrat";
+  color: #D4D6D6;
+}

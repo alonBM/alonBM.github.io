@@ -3,65 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alonso</title>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css"
+    />
+    <link rel="stylesheet" href="stylesheets/css/style.css" />
   </head>
-
   <body>
-      <div id="navbar">
-        <nav>
-            <div class="content">
-              <div class="logo">LOGO</div>
-              <div class="links">
-                <a href="#main">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-              </div>
-            </div>
-          </nav>
-      </div>
-    
-
-    <div class="container">
-      <section id="main">
-        <div>
+    <div id="fullpage">
+      <section class="section active home">
+        <div class="title-container">
           <h1>Alonso Bertea</h1>
-          <h5>Fullstack developer</h2>
+          <p>Software Developer</p>
         </div>
       </section>
-      <section id="about">
-        <div>
-          <h2>Educacion</h2>
-          <ul>
-            <li>Ingenieria de Computadores</li>
-            <li>Universidad de Alcala</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Experiencia</h2>
-          <ul>
-            <li>Practicas externas</li>
-            <li>Babel - 3 meses</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Conocimientos</h2>
-          <ul>
-            <li>HTML, CSS, JSON</li>
-            <li>Python, Java, Javascript, Go</li>
-            <li>Angular, Docker, Kubernetes</li>
-            <li>Machine Learning, Tensorflow</li>
-          </ul>
-        </div>
+      <section class="section projects">
+        <h1>Projects</h1>
       </section>
-      <section id="projects">Tensorflow Otro1 Otro2</section>
-      <section id="contact">Formulario</section>
-      <footer>Footer</footer>
+      <section class="section about">
+        <div class="about-container">
+          <div class="experience">
+            <h2>Experience</h2>
+            <h3>Dependiente de comercio</h3>
+            <p>Pequeña tienda de alimentación</p>
+            <p>Pequeña tienda de alimentación</p>
+            <h3>Fullstack Developer</h3>
+            <p>Babel Sistemas de información</p>
+            <p>Babel Sistemas de información</p>
+          </div>
+          <div class="education">
+            <h2>Education</h2>
+            <p>Grado en Ingenieria de Computadores</p>
+            <p>Universidad de Alcalá de Henares</p>
+            <p>Universidad de Alcalá de Henares</p>
+          </div>
+          <div class="skills">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>Javascript</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>Go</li>
+              <li>Git</li>
+              <li>Machine Learning</li>
+            </ul>
+          </div>
+        </div>        
+      </section>
+      <footer class="section contact">
+        <h1>Contacto</h1>
+      </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
