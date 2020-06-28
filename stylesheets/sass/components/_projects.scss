@@ -9,7 +9,7 @@
       display: grid; 
       align-items: center;
       justify-items: center;
-      background-color: #276acf;   
+      background-color: #1d3557;   
       & > .projects-content{
         display: grid;
         grid-template-rows: repeat(2,1fr);
@@ -19,7 +19,7 @@
         & > .project-card{
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           font-size: 0.6rem;
-          background: #172A45;
+          background:  #325870;
           border-radius: 3px;
           padding: 5vh 5vw;
           & h3{
