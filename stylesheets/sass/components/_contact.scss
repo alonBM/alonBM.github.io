@@ -8,7 +8,7 @@
     width: 100%;
     height: 100%;
     display: grid;
-    background: #1d3557;
+    background: #F2F2F2;
     & .contact-content {
       text-align: center;
       justify-self: center;
@@ -23,6 +23,7 @@
       }
       & p {
         font-size: 1rem;
+        color: black;
         margin-bottom: 10vh ;
       }
       & a{

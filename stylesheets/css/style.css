@@ -19,7 +19,7 @@ img {
 
 body {
   font-family: "Montserrat";
-  color: #D4D6D6;
+  color: #3ec5c5;
 }
 
 /*-------------------------------*/
@@ -111,7 +111,7 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
-  background-color: #1d3557;
+  background-color: #F2F2F2;
 }
 .projects .projects-container > .projects-content {
   display: grid;
@@ -123,7 +123,7 @@ body {
 .projects .projects-container > .projects-content > .project-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 0.6rem;
-  background: #325870;
+  background: #f5e2e5;
   border-radius: 3px;
   padding: 5vh 5vw;
 }
@@ -133,15 +133,24 @@ body {
   margin-bottom: 3vh;
 }
 .projects .projects-container > .projects-content > .project-card p {
-  font-size: 0.7rem;
+  color: black;
+  font-size: 1rem;
   margin-bottom: 3vh;
 }
 .projects .projects-container > .projects-content > .project-card ul > li {
+  color: black;
   display: inline-block;
-  font-size: 0.4rem;
+  font-size: 0.8rem;
   margin-right: 2vw;
 }
 
+@media (min-width: 700px) {
+  .projects .projects-container .projects-content {
+    gap: 5vw;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /*-------------------------------*/
 /*ABOUT SECTION*/
 /*-------------------------------*/
@@ -151,7 +160,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background: #1d3557;
+  background: #F2F2F2;
 }
 .about .about-container .about-content {
   height: 70vh;
@@ -159,6 +168,9 @@ body {
   width: 75%;
   flex-direction: column;
   justify-content: space-evenly;
+}
+.about .about-container .about-content > div {
+  margin-top: 5vh;
 }
 .about .about-container .about-content > div > h2 {
   font-size: 1.5rem;
@@ -168,7 +180,7 @@ body {
 }
 .about .about-container .about-content > div > h3 {
   font-size: 1.3rem;
-  color: #b1f1e7;
+  color: black;
 }
 .about .about-container .about-content > div > p {
   line-height: 1.3;
@@ -176,11 +188,47 @@ body {
 }
 .about .about-container .about-content > div > p.period {
   font-size: 0.8rem;
-  color: #b39b9b;
+  color: black;
   margin-bottom: 0.7vh;
 }
 .about .about-container .about-content > div > p.description {
-  color: #b1f1e7;
+  color: #4d706b;
+}
+
+/*Skills*/
+.programming-ul {
+  margin-top: 2vh;
+  padding-left: 0;
+  list-style: none;
+  font-size: 2rem;
+}
+.programming-ul .programming-li {
+  display: inline-block;
+  margin-right: 3vw;
+}
+.programming-ul .programming-li .fa-js-square {
+  color: #ffca28;
+}
+.programming-ul .programming-li .fa-html5 {
+  color: #e44f26;
+}
+.programming-ul .programming-li .fa-css3-alt {
+  color: #1572b6;
+}
+.programming-ul .programming-li .fa-sass {
+  color: #cd6699;
+}
+.programming-ul .programming-li .fa-java {
+  color: #0d8ac7;
+}
+.programming-ul .programming-li .fa-python {
+  color: #ffd43b;
+}
+.programming-ul .programming-li .fa-git-square {
+  color: #f05133;
+}
+.programming-ul .programming-li .fa-database {
+  color: #3399db;
 }
 
 /*-------------------------------*/
@@ -194,7 +242,7 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  background: #1d3557;
+  background: #F2F2F2;
 }
 .contact .contact-container .contact-content {
   text-align: center;
@@ -211,6 +259,7 @@ body {
 }
 .contact .contact-container .contact-content p {
   font-size: 1rem;
+  color: black;
   margin-bottom: 10vh;
 }
 .contact .contact-container .contact-content a {

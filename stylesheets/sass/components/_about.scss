@@ -8,7 +8,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    background: #1d3557;
+    background: #F2F2F2;
 
     & .about-content {
       height: 70vh;
@@ -19,6 +19,8 @@
     }
 
     & .about-content > div {
+      
+      margin-top: 5vh;
       & > h2 {
         font-size: 1.5rem;
         
@@ -28,7 +30,7 @@
       }
       & > h3 {
         font-size: 1.3rem;
-        color: rgb(177, 241, 231);
+        color: rgb(0, 0, 0);
       }
       & > p {
         line-height: 1.3;
@@ -36,13 +38,62 @@
 
         &.period {
           font-size: 0.8rem;
-          color: #b39b9b;
+          color: rgb(0, 0, 0);
           margin-bottom: 0.7vh;
         }
         &.description {
-          color: rgb(177, 241, 231);
+          color: rgb(77, 112, 107)
         }
       }
     }
   }
 }
+
+/*Skills*/
+.programming-ul {
+  margin-top: 2vh;
+  padding-left: 0;
+  list-style: none;
+  font-size: 2rem;
+
+  & .programming-li {
+    display: inline-block;
+    margin-right: 3vw;
+
+  &  .fa-js-square {
+      color: $jsColor;
+    }
+
+   & .fa-html5 {
+      color: $html5Color;
+    }
+
+   & .fa-css3-alt {
+      color: $css3Color;
+    }
+
+
+   & .fa-sass {
+      color: $sassColor;
+    }
+
+   & .fa-java {
+      color: $javaColor;
+    }
+
+   & .fa-python {
+      color: $pythonColor;
+    }
+
+   & .fa-git-square {
+      color: $gitColor;
+    }
+
+   & .fa-database {
+      color: $dbColor;
+    }
+
+  }
+}
+
+
