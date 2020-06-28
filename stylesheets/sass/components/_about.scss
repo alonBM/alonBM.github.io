@@ -2,34 +2,41 @@
 /*ABOUT SECTION*/
 /*-------------------------------*/
 .about {
-  text-align: center;
-  & .about-container > div {
-    & > h2 {
-      font-size: 1.5rem;
-      color: orange;
-    }
-    & > h3 {
-      font-size: 1rem;
-      color: rgb(177, 241, 231);
-    }
-    & > p.where {
-      font-size: 0.6rem;
-      color: #b39b9b;
-    }
-    & > p.period {
-      font-size: 0.6rem;
-      color: #b39b9b;
-    }
-    & > p.description {
-      font-size: 0.6rem;
-      color: #b39b9b;
-    }
-  }
-
   & .about-container {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: #ad3e3e;
+    & .about-content > div {
+      & > h2 {
+        font-size: 1.5rem;
+        color: orange;
+      }
+      & > h3 {
+        font-size: 1rem;
+        color: rgb(177, 241, 231);
+      }
+      & > p.where {
+        font-size: 0.6rem;
+        color: #b39b9b;
+      }
+      & > p.period {
+        font-size: 0.6rem;
+        color: #b39b9b;
+      }
+      & > p.description {
+        font-size: 0.6rem;
+        color: #b39b9b;
+      }
+    }
+
+    & .about-content {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
   }
 }

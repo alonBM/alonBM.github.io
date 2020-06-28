@@ -91,7 +91,9 @@ body {
   width: 100%;
 }
 .home .home-container > .home-content > h1 {
-  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  margin-bottom: 3vh;
 }
 .home .home-container > .home-content > p {
   font-size: 1rem;
@@ -106,7 +108,7 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
-  background-color: #0A192F;
+  background-color: #276acf;
 }
 .projects .projects-container > .projects-content {
   display: grid;
@@ -139,30 +141,35 @@ body {
 /*-------------------------------*/
 /*ABOUT SECTION*/
 /*-------------------------------*/
-.about {
-  text-align: center;
+.about .about-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: #ad3e3e;
 }
-.about .about-container > div > h2 {
+.about .about-container .about-content > div > h2 {
   font-size: 1.5rem;
   color: orange;
 }
-.about .about-container > div > h3 {
+.about .about-container .about-content > div > h3 {
   font-size: 1rem;
   color: #b1f1e7;
 }
-.about .about-container > div > p.where {
+.about .about-container .about-content > div > p.where {
   font-size: 0.6rem;
   color: #b39b9b;
 }
-.about .about-container > div > p.period {
+.about .about-container .about-content > div > p.period {
   font-size: 0.6rem;
   color: #b39b9b;
 }
-.about .about-container > div > p.description {
+.about .about-container .about-content > div > p.description {
   font-size: 0.6rem;
   color: #b39b9b;
 }
-.about .about-container {
+.about .about-container .about-content {
   height: 60vh;
   display: flex;
   flex-direction: column;
@@ -180,6 +187,7 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
+  background: #4a9099;
 }
 .contact .contact-container .contact-content {
   text-align: center;
