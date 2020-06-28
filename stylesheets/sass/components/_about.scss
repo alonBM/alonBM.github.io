@@ -19,26 +19,25 @@
     }
 
     & .about-content > div {
-      border: 1px solid black;
       & > h2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+        
+        text-transform: uppercase;
         color: orange;
         margin-bottom: 1vh;
       }
       & > h3 {
-        text-transform: uppercase;
         font-size: 1.3rem;
         color: rgb(177, 241, 231);
       }
       & > p {
-        line-height: 1.5;
+        line-height: 1.3;
         font-size: 1rem;
 
         &.period {
           font-size: 0.8rem;
           color: #b39b9b;
-
-          margin-bottom: 1vh;
+          margin-bottom: 0.7vh;
         }
         &.description {
           color: rgb(177, 241, 231);
