@@ -90,14 +90,14 @@ body {
   height: 20%;
   width: 100%;
 }
-.home .home-container > .home-content > h1 {
+.home .home-container > .home-content h1 {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 2.4rem;
   letter-spacing: 8px;
   margin-bottom: 3vh;
 }
-.home .home-container > .home-content > p {
+.home .home-container > .home-content p {
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -143,12 +143,20 @@ body {
   font-size: 0.8rem;
   margin-right: 2vw;
 }
+.projects .projects-container > .projects-content > .project-card:hover {
+  border: 1px solid black;
+}
 
-@media (min-width: 700px) {
+@media (min-width: 1200px) {
   .projects .projects-container .projects-content {
-    gap: 5vw;
+    width: 50%;
+    height: 50%;
+    gap: 4vw;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .projects-container .projects-content > .project-card {
+    padding: 3vh 2vw;
   }
 }
 /*-------------------------------*/

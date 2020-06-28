@@ -39,7 +39,11 @@
             display:inline-block;
             font-size: 0.8rem;
             margin-right: 2vw;
-          }         
+          }
+                 
+        }
+        & > .project-card:hover{
+          border: 1px solid black;
         }
              
       }
@@ -47,16 +51,20 @@
     }
   }
 
-  @media  (min-width: 700px) {
+  @media  (min-width: 1200px) {
     .projects {
       & .projects-container {
-        & .projects-content{  
-          gap: 5vw;
+        & .projects-content{
+          width: 50%;
+          height: 50%;
+          gap: 4vw;
           grid-template-rows: 1fr;
           grid-template-columns: repeat(2,1fr);
+          & > .project-card{
+            padding: 3vh 2vw;
         }
-
       }
     }
   }
+}
   
