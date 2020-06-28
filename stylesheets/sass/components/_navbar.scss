@@ -1,0 +1,54 @@
+/*-------------------------------*/
+/*FULLPAGE LATERAL SCROLL BAR*/
+/*-------------------------------*/
+#fp-nav ul li {
+    & a span {
+      background: orange;
+    }
+    & .fp-tooltip {
+      color: orange;
+    }
+  }
+  #fp-nav.fp-right {
+    right: 0.5vw;
+  }
+  
+  /*-------------------------------*/
+  /*NAVBAR*/
+  /*-------------------------------*/
+  .navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2vh;
+    z-index: 10;
+  
+    & ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      & li,
+      & a {
+        align-self: center;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        transition: 0.4s ease;
+      }
+      & a:hover {
+        color: orange;
+      }
+      & li.active {
+        border-bottom: 3px solid orange;
+        & a {
+          color: orange;
+        }
+      }
+    }
+    & .logo {
+      display: none;
+    }
+  }
+  

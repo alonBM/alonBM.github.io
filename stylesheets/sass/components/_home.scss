@@ -1,0 +1,25 @@
+/*-------------------------------*/
+/*HOME SECTION*/
+/*-------------------------------*/
+.home {
+  & .home-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: url(../../images/header.jpg);
+    background-size: cover;
+    & > .home-content {
+      text-align: center;
+      height: 20%;
+      width: 100%;
+      & > h1 {
+        font-size: 2.5rem;
+      }
+      & > p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

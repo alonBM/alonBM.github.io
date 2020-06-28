@@ -76,19 +76,64 @@ body {
 /*-------------------------------*/
 /*HOME SECTION*/
 /*-------------------------------*/
-.home {
+.home .home-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
   background: url(../../images/header.jpg);
   background-size: cover;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
 }
-.home .title-container > h1 {
+.home .home-container > .home-content {
+  text-align: center;
+  height: 20%;
+  width: 100%;
+}
+.home .home-container > .home-content > h1 {
   font-size: 2.5rem;
 }
-.home .title-container > p {
+.home .home-container > .home-content > p {
   font-size: 1rem;
+}
+
+/*-------------------------------*/
+/*Projects SECTION*/
+/*-------------------------------*/
+.projects .projects-container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: #0A192F;
+}
+.projects .projects-container > .projects-content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3vh;
+  height: 70vh;
+  width: 70vw;
+}
+.projects .projects-container > .projects-content > .project-card {
+  font-size: 0.6rem;
+  background: #172A45;
+  border-radius: 3px;
+  padding: 5vh 5vw;
+}
+.projects .projects-container > .projects-content > .project-card h3 {
+  color: orange;
+  font-size: 1.2rem;
+  margin-bottom: 3vh;
+}
+.projects .projects-container > .projects-content > .project-card p {
+  font-size: 0.7rem;
+  margin-bottom: 3vh;
+}
+.projects .projects-container > .projects-content > .project-card ul > li {
+  display: inline-block;
+  font-size: 0.4rem;
+  margin-right: 2vw;
 }
 
 /*-------------------------------*/
@@ -144,50 +189,22 @@ body {
   height: 40%;
 }
 .contact .contact-container .contact-content h2 {
-  font-size: 1rem;
-  padding-bottom: 3vh;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: orange;
+  margin-bottom: 6vh;
 }
 .contact .contact-container .contact-content p {
   font-size: 0.6rem;
-  padding-bottom: 3vh;
+  margin-bottom: 10vh;
 }
-
-/*-------------------------------*/
-/*Projects SECTION*/
-/*-------------------------------*/
-.projects .projects-container {
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  background-color: #A192F;
-}
-.projects .projects-container > .projects-content {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  gap: 3vh;
-  height: 70vh;
-  width: 70vw;
-}
-.projects .projects-container > .projects-content > .project-card {
-  font-size: 0.6rem;
-  background: #172A45;
-  border-radius: 3px;
-  padding: 5vh 5vw;
-}
-.projects .projects-container > .projects-content > .project-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 3vh;
-}
-.projects .projects-container > .projects-content > .project-card p {
+.contact .contact-container .contact-content a {
   font-size: 0.7rem;
-  margin-bottom: 3vh;
-}
-.projects .projects-container > .projects-content > .project-card ul > li {
-  display: inline-block;
-  font-size: 0.4rem;
-  margin-right: 2vw;
+  color: orange;
+  border: solid 1px orange;
+  padding: 15px;
+  text-transform: uppercase;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
