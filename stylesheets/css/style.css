@@ -91,12 +91,15 @@ body {
   width: 100%;
 }
 .home .home-container > .home-content > h1 {
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 2.4rem;
+  letter-spacing: 8px;
   margin-bottom: 3vh;
 }
 .home .home-container > .home-content > p {
   font-size: 1rem;
+  text-transform: uppercase;
 }
 
 /*-------------------------------*/
@@ -118,6 +121,7 @@ body {
   width: 70vw;
 }
 .projects .projects-container > .projects-content > .project-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 0.6rem;
   background: #172A45;
   border-radius: 3px;
@@ -147,33 +151,39 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background: #ad3e3e;
-}
-.about .about-container .about-content > div > h2 {
-  font-size: 1.5rem;
-  color: orange;
-}
-.about .about-container .about-content > div > h3 {
-  font-size: 1rem;
-  color: #b1f1e7;
-}
-.about .about-container .about-content > div > p.where {
-  font-size: 0.6rem;
-  color: #b39b9b;
-}
-.about .about-container .about-content > div > p.period {
-  font-size: 0.6rem;
-  color: #b39b9b;
-}
-.about .about-container .about-content > div > p.description {
-  font-size: 0.6rem;
-  color: #b39b9b;
+  background: #247ba0;
 }
 .about .about-container .about-content {
-  height: 60vh;
+  height: 70vh;
   display: flex;
+  width: 75%;
   flex-direction: column;
   justify-content: space-evenly;
+}
+.about .about-container .about-content > div {
+  border: 1px solid black;
+}
+.about .about-container .about-content > div > h2 {
+  font-size: 1.7rem;
+  color: orange;
+  margin-bottom: 1vh;
+}
+.about .about-container .about-content > div > h3 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #b1f1e7;
+}
+.about .about-container .about-content > div > p {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+.about .about-container .about-content > div > p.period {
+  font-size: 0.8rem;
+  color: #b39b9b;
+  margin-bottom: 1vh;
+}
+.about .about-container .about-content > div > p.description {
+  color: #b1f1e7;
 }
 
 /*-------------------------------*/
