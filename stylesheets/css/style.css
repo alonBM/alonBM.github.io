@@ -144,7 +144,7 @@ body {
   margin-right: 2vw;
 }
 .projects .projects-container > .projects-content > .project-card:hover {
-  border: 1px solid black;
+  transform: scale(1.03);
 }
 
 @media (min-width: 1200px) {
