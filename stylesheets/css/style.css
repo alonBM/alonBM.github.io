@@ -204,38 +204,38 @@ body {
 }
 
 /*Skills*/
-.programming-ul {
+.skill-ul {
   margin-top: 2vh;
   padding-left: 0;
   list-style: none;
   font-size: 2rem;
 }
-.programming-ul .programming-li {
+.skill-ul .skill-li {
   display: inline-block;
   margin-right: 3vw;
 }
-.programming-ul .programming-li .fa-js-square {
+.skill-ul .skill-li .fa-js-square {
   color: #ffca28;
 }
-.programming-ul .programming-li .fa-html5 {
+.skill-ul .skill-li .fa-html5 {
   color: #e44f26;
 }
-.programming-ul .programming-li .fa-css3-alt {
+.skill-ul .skill-li .fa-css3-alt {
   color: #1572b6;
 }
-.programming-ul .programming-li .fa-sass {
+.skill-ul .skill-li .fa-sass {
   color: #cd6699;
 }
-.programming-ul .programming-li .fa-java {
+.skill-ul .skill-li .fa-java {
   color: #0d8ac7;
 }
-.programming-ul .programming-li .fa-python {
+.skill-ul .skill-li .fa-python {
   color: #ffd43b;
 }
-.programming-ul .programming-li .fa-git-square {
+.skill-ul .skill-li .fa-git-square {
   color: #f05133;
 }
-.programming-ul .programming-li .fa-database {
+.skill-ul .skill-li .fa-database {
   color: #3399db;
 }
 
