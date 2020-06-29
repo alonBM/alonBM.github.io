@@ -8,7 +8,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    background: #F2F2F2;
+    background: $backgroundColor;
 
     & .about-content {
       height: 70vh;
@@ -18,8 +18,7 @@
       justify-content: space-evenly;
     }
 
-    & .about-content > div {
-      
+    & .about-content > div {      
       margin-top: 5vh;
       & > h2 {
         font-size: 1.5rem;
@@ -50,13 +49,13 @@
 }
 
 /*Skills*/
-.programming-ul {
+.skill-ul {
   margin-top: 2vh;
   padding-left: 0;
   list-style: none;
   font-size: 2rem;
 
-  & .programming-li {
+  & .skill-li {
     display: inline-block;
     margin-right: 3vw;
 
@@ -71,7 +70,6 @@
    & .fa-css3-alt {
       color: $css3Color;
     }
-
 
    & .fa-sass {
       color: $sassColor;
